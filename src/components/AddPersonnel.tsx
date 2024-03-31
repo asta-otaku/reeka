@@ -16,7 +16,7 @@ function AddPersonnel({
   setStep: React.Dispatch<React.SetStateAction<number>>;
   setData: React.Dispatch<any>;
 }) {
-  const [formDetails, setFormDetails] = useState({});
+  const [formDetails, setFormDetails] = useState<any>({});
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setFormDetails({
       ...formDetails,
@@ -26,6 +26,7 @@ function AddPersonnel({
 
   const handleFormSubmit = (e: any) => {
     e.preventDefault();
+    if (!formDetails.name || !formDetails.email || !formDetails.phone) return;
     setData([
       ...data,
       {
