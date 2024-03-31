@@ -9,7 +9,7 @@ function CreateReservation() {
   return (
     <div
       onClick={(e) => e.stopPropagation()}
-      className="max-w-xs md:max-w-lg w-full bg-white rounded-lg flex flex-col items-start p-5 z-[200]"
+      className="max-w-sm md:max-w-lg max-h-[80vh] overflow-y-auto no-scrollbar w-full bg-white rounded-lg flex flex-col items-start p-5 z-[200]"
     >
       <div className="flex justify-between items-center w-full">
         <img src={flag} alt="" className="cursor-pointer" />

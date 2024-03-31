@@ -30,9 +30,9 @@ function ViewBooking({
           1: (
             <div
               onClick={(e) => e.stopPropagation()}
-              className="max-w-xs md:max-w-xl w-full bg-white rounded-lg flex flex-col items-start py-5 z-[200]"
+              className="max-w-sm md:max-w-xl w-full max-h-[80vh] no-scrollbar overflow-y-auto bg-white rounded-lg flex flex-col items-start py-5 z-[200]"
             >
-              <div className="flex justify-between items-center w-full pb-4 border-0 border-b border-solid px-8">
+              <div className="flex justify-between items-center w-full pb-4 border-0 border-b border-solid px-2 md:px-8">
                 <div className="flex justify-between items-center w-full">
                   <div
                     style={{
@@ -58,7 +58,7 @@ function ViewBooking({
                   </span>
                 </div>
               </div>
-              <div className="my-5 px-8 flex justify-between items-center w-full">
+              <div className="my-5 px-2 md:px-8 flex flex-wrap justify-center gap-2 md:justify-between items-center w-full">
                 <div className="flex items-stretch gap-2">
                   <div>
                     <h6 className="text-[#3A3A3A] font-bold">24</h6>
@@ -86,10 +86,10 @@ function ViewBooking({
                   </button>
                 </div>
               </div>
-              <h3 className="my-3 px-8 text-[#333333] font-medium text-xs">
+              <h3 className="my-3 px-2 md:px-8 text-[#333333] font-medium text-xs">
                 Duration
               </h3>
-              <div className="px-8 flex justify-between items-center w-full py-3">
+              <div className="px-2 md:px-8 flex justify-between items-center w-full py-3">
                 <div>
                   <button className="px-2 py-1 border border-solid border-[#C9C9C9] rounded text-[#9C9B9B] text-[10px] font-bold">
                     Check In
@@ -114,7 +114,7 @@ function ViewBooking({
               </div>
               <hr className="w-[90%] mx-auto my-3" />
 
-              <section className="map px-8 flex flex-col w-full gap-3">
+              <section className="map px-2 md:px-8 flex flex-col w-full gap-3">
                 <h6 className="font-medium text-xs text-[#333333]">Property</h6>
                 <div className="flex items-center gap-2">
                   <img src={pin} alt="" className="w-8" />
@@ -150,7 +150,7 @@ function ViewBooking({
                 <h5 className="font-mediun text-xs text-[#333333">
                   Amount Paid
                 </h5>
-                <h4 className="text-[#219653] font-medium text-xl"></h4>
+                <h4 className="text-[#219653] font-medium text-xl">$2000</h4>
                 <p className="text-[#828282] text-[10px]">$200 Per Night</p>
               </section>
             </div>
@@ -158,7 +158,7 @@ function ViewBooking({
           2: (
             <div
               onClick={(e) => e.stopPropagation()}
-              className="max-w-xs md:max-w-lg w-full bg-white rounded-lg flex flex-col items-center p-5 z-[200]"
+              className="max-w-sm md:max-w-lg w-full bg-white rounded-lg flex flex-col items-center p-5 z-[200]"
             >
               <div className="flex justify-between items-center w-full">
                 <img src={flag} alt="" className="cursor-pointer" />

@@ -17,7 +17,7 @@ function App() {
       {
         {
           1: (
-            <div className="max-w-xs md:max-w-md w-full bg-white rounded-2xl flex flex-col items-start p-8">
+            <div className="max-w-sm md:max-w-md w-full bg-white rounded-2xl flex flex-col items-start p-4 md:p-8">
               <Link
                 to="/"
                 className="self-end text-primary font-bold text-sm py-2 px-3 bg-[#F5F5F5] rounded-xl"
@@ -48,7 +48,7 @@ function App() {
             </div>
           ),
           2: (
-            <div className="max-w-xs md:max-w-md w-full bg-white rounded-2xl flex flex-col items-start p-8">
+            <div className="max-w-sm md:max-w-md w-full bg-white rounded-2xl flex flex-col items-start p-4 md:p-8">
               <span onClick={() => setStep(1)}>
                 <ArrowLongLeftIcon className="w-5 text-5 cursor-pointer" />
               </span>
@@ -132,7 +132,7 @@ function App() {
             </div>
           ),
           3: (
-            <div className="max-w-xs md:max-w-xl w-full bg-white rounded-2xl flex flex-col items-start px-4 py-8">
+            <div className="max-w-sm md:max-w-xl w-full bg-white rounded-2xl flex flex-col items-start px-4 py-8">
               <span onClick={() => setStep(2)}>
                 <ArrowLongLeftIcon className="w-5 text-5 cursor-pointer" />
               </span>
